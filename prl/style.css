@@ -1,4 +1,3 @@
-/* Estilo global */
 * {
     margin: 0;
     padding: 0;
@@ -8,70 +7,63 @@
 
 body {
     background-color: #fff4e3;
-    color: #000000;
+    color: #000000; 
 }
 
 header {
-    background-color: #c41230;
+    background-color: #a30923; 
+    padding: 20px;  /*espaçamento ao redor do conteúdo*/
+    text-align: center;  /*centraliza*/
     color: #fff4e3;
-    padding: 20px;
-    text-align: center;
+}
+.header-content {
+    display: flex;  /*layout flexível para organizar o logo e o título lado a lado*/
+    align-items: center;  /*alinha verticalmente o logo e o título*/
+    justify-content: center;  /*centraliza horizontalmente o conteúdo*/
 }
 
-.logo-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+/*define o tamanho da imagem*/
+.logo {
+    width: 80px;  /*largura da imagem*/
+    margin-right: 20px;  /*espaço entre o logo e o título*/
 }
-
-.logo-star {
-    background-color: #fff4e3;
-    color: #c41230;
-    font-size: 24px;
-    font-weight: bold;
-    padding: 10px;
-    border-radius: 50%;
-    margin-right: 15px;
-    position: relative;
-}
-
-.logo-star::before {
-    content: '';
-    position: absolute;
-    top: -10px;
-    right: -10px;
-    width: 20px;
-    height: 20px;
-    background-color: #fff4e3;
-    clip-path: polygon(50% 0%, 60% 40%, 100% 50%, 60% 60%, 50% 100%, 40% 60%, 0% 50%, 40% 40%);
-}
-
 h1 {
-    font-size: 28px;
+    font-size: 28px;  /*tamanho do título*/
+    margin: 0;  /*remove margens externas*/
 }
-
-.main-content {
+main {
     display: flex;
-    justify-content: space-between;
-    padding: 40px;
+    justify-content: space-between;  /*espaço entre o conteúdo e a imagem*/
+    padding: 40px;  /*espaçamento ao redor do conteúdo principal*/
 }
-
-.left-content {
-    flex: 1;
-    padding-right: 20px;
+.content {
+    max-width: 700px;  /*limita a largura máxima do texto*/
 }
-
-.left-content h2 {
-    font-size: 32px;
-    color: #a30923;
-    margin-bottom: 20px;
+.content h2 {
+    font-size: 28px;
+    color: #000000;
+    margin: 50px;
+    margin-left: 300px;
 }
-
-.left-content p {
-    font-size: 18px;
-    line-height: 1.6;
+.content h3 {
+    font-size: 28px; 
+    color: #000000;
+    margin: 50px;
+    margin-left: 300px;
 }
-
+.content p {
+    margin-top: 20px;
+    font-size: 20px;
+    margin-left: 300px;
+}
+.image img { /*estilos para a seção de imagem*/
+    width: 500px;
+    border-radius: 10px; /*adiciona bordas arredondadas na imagem*/
+    position: absolute;
+    left: 1100px;
+    top: 250px;
+    
+}
 .right-content {
     flex: 0.5;
 }
